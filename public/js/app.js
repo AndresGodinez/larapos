@@ -406,14 +406,6 @@ $exports.store = store;
 /* 3 */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.5.7' };
-if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
-
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports) {
-
 /* globals __VUE_SSR_CONTEXT__ */
 
 // IMPORTANT: Do NOT use ES2015 features in this file.
@@ -520,6 +512,14 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+var core = module.exports = { version: '2.5.7' };
+if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
+
+
+/***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -535,7 +535,7 @@ module.exports = function (it) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var global = __webpack_require__(1);
-var core = __webpack_require__(3);
+var core = __webpack_require__(4);
 var ctx = __webpack_require__(13);
 var hide = __webpack_require__(7);
 var has = __webpack_require__(15);
@@ -849,7 +849,7 @@ module.exports = defaults;
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(4)
+var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(94)
 /* template */
@@ -12709,7 +12709,7 @@ module.exports = function (it) {
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var core = __webpack_require__(3);
+var core = __webpack_require__(4);
 var global = __webpack_require__(1);
 var SHARED = '__core-js_shared__';
 var store = global[SHARED] || (global[SHARED] = {});
@@ -42809,7 +42809,7 @@ module.exports=function(r){var t={};function e(n){if(t[n])return t[n].exports;va
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(4)
+var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(87)
 /* template */
@@ -42925,7 +42925,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(4)
+var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(90)
 /* template */
@@ -43041,7 +43041,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(4)
+var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(93)
 /* template */
@@ -43445,7 +43445,7 @@ __webpack_require__(110);
 __webpack_require__(114);
 __webpack_require__(126);
 __webpack_require__(127);
-module.exports = __webpack_require__(3).Promise;
+module.exports = __webpack_require__(4).Promise;
 
 
 /***/ }),
@@ -44016,7 +44016,7 @@ if (!USE_NATIVE) {
 $export($export.G + $export.W + $export.F * !USE_NATIVE, { Promise: $Promise });
 __webpack_require__(26)($Promise, PROMISE);
 __webpack_require__(124)(PROMISE);
-Wrapper = __webpack_require__(3)[PROMISE];
+Wrapper = __webpack_require__(4)[PROMISE];
 
 // statics
 $export($export.S + $export.F * !USE_NATIVE, PROMISE, {
@@ -44161,7 +44161,7 @@ module.exports = function (it) {
 var classof = __webpack_require__(46);
 var ITERATOR = __webpack_require__(2)('iterator');
 var Iterators = __webpack_require__(11);
-module.exports = __webpack_require__(3).getIteratorMethod = function (it) {
+module.exports = __webpack_require__(4).getIteratorMethod = function (it) {
   if (it != undefined) return it[ITERATOR]
     || it['@@iterator']
     || Iterators[classof(it)];
@@ -44295,7 +44295,7 @@ module.exports = function (target, src, safe) {
 "use strict";
 
 var global = __webpack_require__(1);
-var core = __webpack_require__(3);
+var core = __webpack_require__(4);
 var dP = __webpack_require__(9);
 var DESCRIPTORS = __webpack_require__(8);
 var SPECIES = __webpack_require__(2)('species');
@@ -44345,7 +44345,7 @@ module.exports = function (exec, skipClosing) {
 // https://github.com/tc39/proposal-promise-finally
 
 var $export = __webpack_require__(6);
-var core = __webpack_require__(3);
+var core = __webpack_require__(4);
 var global = __webpack_require__(1);
 var speciesConstructor = __webpack_require__(47);
 var promiseResolve = __webpack_require__(50);
@@ -44424,7 +44424,7 @@ module.exports = { "default": __webpack_require__(130), __esModule: true };
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(131);
-var $Object = __webpack_require__(3).Object;
+var $Object = __webpack_require__(4).Object;
 module.exports = function defineProperty(it, key, desc) {
   return $Object.defineProperty(it, key, desc);
 };
@@ -44450,7 +44450,7 @@ module.exports = { "default": __webpack_require__(133), __esModule: true };
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(134);
-module.exports = __webpack_require__(3).Object.assign;
+module.exports = __webpack_require__(4).Object.assign;
 
 
 /***/ }),
@@ -45143,7 +45143,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(4)
+var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(141)
 /* template */
@@ -45587,11 +45587,11 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(4)
+var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(144)
 /* template */
-var __vue_template__ = __webpack_require__(151)
+var __vue_template__ = __webpack_require__(154)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -45924,7 +45924,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(4)
+var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(146)
 /* template */
@@ -46189,11 +46189,11 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(4)
+var normalizeComponent = __webpack_require__(3)
 /* script */
 var __vue_script__ = __webpack_require__(149)
 /* template */
-var __vue_template__ = __webpack_require__(150)
+var __vue_template__ = __webpack_require__(153)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -46239,7 +46239,7 @@ module.exports = Component.exports
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_typeahead__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_typeahead___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_typeahead__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FormCreateCustomer_vue__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FormCreateCustomer_vue__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FormCreateCustomer_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__FormCreateCustomer_vue__);
 //
 //
@@ -46373,6 +46373,267 @@ Vue.prototype.$http = axios;
 
 /***/ }),
 /* 150 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(151)
+/* template */
+var __vue_template__ = __webpack_require__(152)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/FormCreateCustomer.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1e1d4b56", Component.options)
+  } else {
+    hotAPI.reload("data-v-1e1d4b56", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 151 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            form: {
+                name: null,
+                email: null,
+                phone: null,
+                address: null
+            }
+        };
+    },
+
+    methods: {
+        store: function store() {
+            var that = this;
+
+            axios.post('/api/customers', this.form).then(function (res) {
+                that.$bus.$emit('customerCreated', {
+                    customer: res.data
+                });
+
+                that.clearForm();
+            });
+        },
+        clearForm: function clearForm() {
+            this.form = {
+                name: null,
+                email: null,
+                phone: null,
+                address: null
+            };
+        }
+    },
+    mounted: function mounted() {
+        var _this = this;
+
+        this.$bus.$on('saveFormCreateCustomer', function (event) {
+            _this.store();
+        });
+
+        this.$bus.$on('clearFormCreateCustomer', function (event) {
+            _this.clearForm();
+        });
+    }
+});
+
+/***/ }),
+/* 152 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("form", [
+    _c("div", { staticClass: "form-group" }, [
+      _c("label", { attrs: { for: "name" } }, [_vm._v("Name *")]),
+      _vm._v(" "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.form.name,
+            expression: "form.name"
+          }
+        ],
+        staticClass: "form-control",
+        attrs: { type: "text", id: "name", placeholder: "Customer name" },
+        domProps: { value: _vm.form.name },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.$set(_vm.form, "name", $event.target.value)
+          }
+        }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "invalid-feedback" })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "form-group" }, [
+      _c("label", { attrs: { for: "email" } }, [_vm._v("Email *")]),
+      _vm._v(" "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.form.email,
+            expression: "form.email"
+          }
+        ],
+        staticClass: "form-control",
+        attrs: { type: "text", id: "email", placeholder: "Customer email" },
+        domProps: { value: _vm.form.email },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.$set(_vm.form, "email", $event.target.value)
+          }
+        }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "invalid-feedback" })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "form-group" }, [
+      _c("label", { attrs: { for: "phone" } }, [_vm._v("Phone Number *")]),
+      _vm._v(" "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.form.phone,
+            expression: "form.phone"
+          }
+        ],
+        staticClass: "form-control",
+        attrs: {
+          type: "text",
+          id: "phone",
+          placeholder: "Customer phone number"
+        },
+        domProps: { value: _vm.form.phone },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.$set(_vm.form, "phone", $event.target.value)
+          }
+        }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "invalid-feedback" })
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "form-group" }, [
+      _c("label", { attrs: { for: "address" } }, [_vm._v("Adress")]),
+      _vm._v(" "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.form.address,
+            expression: "form.address"
+          }
+        ],
+        staticClass: "form-control",
+        attrs: { type: "text", id: "address", placeholder: "Customer address" },
+        domProps: { value: _vm.form.address },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.$set(_vm.form, "address", $event.target.value)
+          }
+        }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "invalid-feedback" })
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-1e1d4b56", module.exports)
+  }
+}
+
+/***/ }),
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -46599,7 +46860,7 @@ if (false) {
 }
 
 /***/ }),
-/* 151 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -46956,267 +47217,6 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-6ae2d281", module.exports)
-  }
-}
-
-/***/ }),
-/* 152 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(4)
-/* script */
-var __vue_script__ = __webpack_require__(153)
-/* template */
-var __vue_template__ = __webpack_require__(154)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/FormCreateCustomer.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1e1d4b56", Component.options)
-  } else {
-    hotAPI.reload("data-v-1e1d4b56", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 153 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            form: {
-                name: null,
-                email: null,
-                phone: null,
-                address: null
-            }
-        };
-    },
-
-    methods: {
-        store: function store() {
-            var that = this;
-
-            axios.post('/api/customers', this.form).then(function (res) {
-                that.$bus.$emit('customerCreated', {
-                    customer: res.data
-                });
-
-                that.clearForm();
-            });
-        },
-        clearForm: function clearForm() {
-            this.form = {
-                name: null,
-                email: null,
-                phone: null,
-                address: null
-            };
-        }
-    },
-    mounted: function mounted() {
-        var _this = this;
-
-        this.$bus.$on('saveFormCreateCustomer', function (event) {
-            _this.store();
-        });
-
-        this.$bus.$on('clearFormCreateCustomer', function (event) {
-            _this.clearForm();
-        });
-    }
-});
-
-/***/ }),
-/* 154 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("form", [
-    _c("div", { staticClass: "form-group" }, [
-      _c("label", { attrs: { for: "name" } }, [_vm._v("Name *")]),
-      _vm._v(" "),
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.form.name,
-            expression: "form.name"
-          }
-        ],
-        staticClass: "form-control",
-        attrs: { type: "text", id: "name", placeholder: "Customer name" },
-        domProps: { value: _vm.form.name },
-        on: {
-          input: function($event) {
-            if ($event.target.composing) {
-              return
-            }
-            _vm.$set(_vm.form, "name", $event.target.value)
-          }
-        }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "invalid-feedback" })
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "form-group" }, [
-      _c("label", { attrs: { for: "email" } }, [_vm._v("Email *")]),
-      _vm._v(" "),
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.form.email,
-            expression: "form.email"
-          }
-        ],
-        staticClass: "form-control",
-        attrs: { type: "text", id: "email", placeholder: "Customer email" },
-        domProps: { value: _vm.form.email },
-        on: {
-          input: function($event) {
-            if ($event.target.composing) {
-              return
-            }
-            _vm.$set(_vm.form, "email", $event.target.value)
-          }
-        }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "invalid-feedback" })
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "form-group" }, [
-      _c("label", { attrs: { for: "phone" } }, [_vm._v("Phone Number *")]),
-      _vm._v(" "),
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.form.phone,
-            expression: "form.phone"
-          }
-        ],
-        staticClass: "form-control",
-        attrs: {
-          type: "text",
-          id: "phone",
-          placeholder: "Customer phone number"
-        },
-        domProps: { value: _vm.form.phone },
-        on: {
-          input: function($event) {
-            if ($event.target.composing) {
-              return
-            }
-            _vm.$set(_vm.form, "phone", $event.target.value)
-          }
-        }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "invalid-feedback" })
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "form-group" }, [
-      _c("label", { attrs: { for: "address" } }, [_vm._v("Adress")]),
-      _vm._v(" "),
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.form.address,
-            expression: "form.address"
-          }
-        ],
-        staticClass: "form-control",
-        attrs: { type: "text", id: "address", placeholder: "Customer address" },
-        domProps: { value: _vm.form.address },
-        on: {
-          input: function($event) {
-            if ($event.target.composing) {
-              return
-            }
-            _vm.$set(_vm.form, "address", $event.target.value)
-          }
-        }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "invalid-feedback" })
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1e1d4b56", module.exports)
   }
 }
 
